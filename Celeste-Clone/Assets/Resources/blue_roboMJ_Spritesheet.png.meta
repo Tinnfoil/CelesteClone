@@ -1,0 +1,1184 @@
+fileFormatVersion: 2
+guid: 054887a0acd94cf48a25e00f8dc62435
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5431526733411120017
+    second: roboMJ_Spritesheet_Blue_0
+  - first:
+      213: -3060589677409218553
+    second: roboMJ_Spritesheet_Blue_1
+  - first:
+      213: 7146757108265360288
+    second: roboMJ_Spritesheet_Blue_2
+  - first:
+      213: 2182005095616365832
+    second: roboMJ_Spritesheet_Blue_3
+  - first:
+      213: 4150269129367421197
+    second: roboMJ_Spritesheet_Blue_4
+  - first:
+      213: -2749175010712584087
+    second: roboMJ_Spritesheet_Blue_5
+  - first:
+      213: -3537411131631869571
+    second: roboMJ_Spritesheet_Blue_6
+  - first:
+      213: -3978539683805209596
+    second: roboMJ_Spritesheet_Blue_7
+  - first:
+      213: 4116745261748319415
+    second: roboMJ_Spritesheet_Blue_8
+  - first:
+      213: 864791867483504930
+    second: roboMJ_Spritesheet_Blue_9
+  - first:
+      213: 574723831773738701
+    second: roboMJ_Spritesheet_Blue_10
+  - first:
+      213: 2259101954093217779
+    second: roboMJ_Spritesheet_Blue_11
+  - first:
+      213: -2047286333920411427
+    second: roboMJ_Spritesheet_Blue_12
+  - first:
+      213: 2920535887662695721
+    second: roboMJ_Spritesheet_Blue_13
+  - first:
+      213: 7159664183170228746
+    second: roboMJ_Spritesheet_Blue_14
+  - first:
+      213: 4402689390903993780
+    second: roboMJ_Spritesheet_Blue_15
+  - first:
+      213: -1491690049947083961
+    second: roboMJ_Spritesheet_Blue_16
+  - first:
+      213: -250534153310494087
+    second: roboMJ_Spritesheet_Blue_17
+  - first:
+      213: -4528430091601526404
+    second: roboMJ_Spritesheet_Blue_18
+  - first:
+      213: 1092296499984021341
+    second: roboMJ_Spritesheet_Blue_19
+  - first:
+      213: -4757627514080902479
+    second: roboMJ_Spritesheet_Blue_20
+  - first:
+      213: 2051094836032263670
+    second: roboMJ_Spritesheet_Blue_21
+  - first:
+      213: -7736002714831005797
+    second: roboMJ_Spritesheet_Blue_22
+  - first:
+      213: 5038871453460039745
+    second: roboMJ_Spritesheet_Blue_23
+  - first:
+      213: -8114496697979854472
+    second: roboMJ_Spritesheet_Blue_24
+  - first:
+      213: 4049932337708399471
+    second: roboMJ_Spritesheet_Blue_25
+  - first:
+      213: 4165277990027021308
+    second: roboMJ_Spritesheet_Blue_26
+  - first:
+      213: 1669320317298611536
+    second: roboMJ_Spritesheet_Blue_27
+  - first:
+      213: 7083082528451309528
+    second: roboMJ_Spritesheet_Blue_28
+  - first:
+      213: -8964175291669678209
+    second: roboMJ_Spritesheet_Blue_29
+  - first:
+      213: 7004002222511485136
+    second: roboMJ_Spritesheet_Blue_30
+  - first:
+      213: 6642680629013896428
+    second: roboMJ_Spritesheet_Blue_31
+  - first:
+      213: -3636901807936640899
+    second: roboMJ_Spritesheet_Blue_32
+  - first:
+      213: -3276536960283616046
+    second: roboMJ_Spritesheet_Blue_33
+  - first:
+      213: 5598784721856293472
+    second: roboMJ_Spritesheet_Blue_34
+  - first:
+      213: 6752057303868906245
+    second: roboMJ_Spritesheet_Blue_35
+  - first:
+      213: 419434721908372314
+    second: roboMJ_Spritesheet_Blue_36
+  - first:
+      213: -6912438228650366897
+    second: roboMJ_Spritesheet_Blue_37
+  - first:
+      213: -4690585676262021246
+    second: roboMJ_Spritesheet_Blue_38
+  - first:
+      213: 6095979728879650249
+    second: roboMJ_Spritesheet_Blue_39
+  - first:
+      213: 4847518604645849986
+    second: blue_roboMJ_Spritesheet_0
+  - first:
+      213: -1184297345066250684
+    second: blue_roboMJ_Spritesheet_1
+  - first:
+      213: 3421741881909434335
+    second: blue_roboMJ_Spritesheet_2
+  - first:
+      213: -209565015399978167
+    second: blue_roboMJ_Spritesheet_3
+  - first:
+      213: -7710241426825064399
+    second: blue_roboMJ_Spritesheet_4
+  - first:
+      213: 55366522405931836
+    second: blue_roboMJ_Spritesheet_5
+  - first:
+      213: 7779072429950236424
+    second: blue_roboMJ_Spritesheet_6
+  - first:
+      213: -2338903650311188904
+    second: blue_roboMJ_Spritesheet_7
+  - first:
+      213: -2478458741495600749
+    second: blue_roboMJ_Spritesheet_8
+  - first:
+      213: 3340863514232295883
+    second: blue_roboMJ_Spritesheet_9
+  - first:
+      213: 6434253287127977165
+    second: blue_roboMJ_Spritesheet_10
+  - first:
+      213: 3099030540422858946
+    second: blue_roboMJ_Spritesheet_11
+  - first:
+      213: -8052881140555967858
+    second: blue_roboMJ_Spritesheet_12
+  - first:
+      213: 7676417306286322516
+    second: blue_roboMJ_Spritesheet_13
+  - first:
+      213: 706891136318910287
+    second: blue_roboMJ_Spritesheet_14
+  - first:
+      213: -6593012710037122733
+    second: blue_roboMJ_Spritesheet_15
+  - first:
+      213: -6485233570946501902
+    second: blue_roboMJ_Spritesheet_16
+  - first:
+      213: 5593429824709186778
+    second: blue_roboMJ_Spritesheet_17
+  - first:
+      213: 4094647657878601893
+    second: blue_roboMJ_Spritesheet_18
+  - first:
+      213: 4788121341307022862
+    second: blue_roboMJ_Spritesheet_19
+  - first:
+      213: -1184966813112048590
+    second: blue_roboMJ_Spritesheet_20
+  - first:
+      213: 1143244816011455106
+    second: blue_roboMJ_Spritesheet_21
+  - first:
+      213: 1235073138221426534
+    second: blue_roboMJ_Spritesheet_22
+  - first:
+      213: -2267383142996818090
+    second: blue_roboMJ_Spritesheet_23
+  - first:
+      213: 3191946639703748498
+    second: blue_roboMJ_Spritesheet_24
+  - first:
+      213: -8555110802358045084
+    second: blue_roboMJ_Spritesheet_25
+  - first:
+      213: -818578384509624462
+    second: blue_roboMJ_Spritesheet_26
+  - first:
+      213: -2789745531756346800
+    second: blue_roboMJ_Spritesheet_27
+  - first:
+      213: 1771955338387455111
+    second: blue_roboMJ_Spritesheet_28
+  - first:
+      213: -4338512704256743223
+    second: blue_roboMJ_Spritesheet_29
+  - first:
+      213: -5807308593007483397
+    second: blue_roboMJ_Spritesheet_30
+  - first:
+      213: 6780321170620258989
+    second: blue_roboMJ_Spritesheet_31
+  - first:
+      213: 7342024481988673124
+    second: blue_roboMJ_Spritesheet_32
+  - first:
+      213: 4395476887640948541
+    second: blue_roboMJ_Spritesheet_33
+  - first:
+      213: 7478360422716110533
+    second: blue_roboMJ_Spritesheet_34
+  - first:
+      213: 1016535993030696702
+    second: blue_roboMJ_Spritesheet_35
+  - first:
+      213: -8447026556717092757
+    second: blue_roboMJ_Spritesheet_36
+  - first:
+      213: -8891835006677625326
+    second: blue_roboMJ_Spritesheet_37
+  - first:
+      213: 8555880648273749933
+    second: blue_roboMJ_Spritesheet_38
+  - first:
+      213: -2200921983490943090
+    second: blue_roboMJ_Spritesheet_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 21
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b5308dc78d54340800000000000000
+      internalID: 4847518604645849986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e43eed6d7809fe0800000000000000
+      internalID: -1184297345066250684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7d948cc187c7f20800000000000000
+      internalID: 3421741881909434335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b2cb39ab9771df0800000000000000
+      internalID: -209565015399978167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130579dd548bff490800000000000000
+      internalID: -7710241426825064399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b447c0f83b4c000800000000000000
+      internalID: 55366522405931836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807f735e821d4fb60800000000000000
+      internalID: 7779072429950236424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e4657a58b8a8fd0800000000000000
+      internalID: -2338903650311188904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39961b2f7eeba9dd0800000000000000
+      internalID: -2478458741495600749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc111e06aa12d5e20800000000000000
+      internalID: 3340863514232295883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc0726464f0b4950800000000000000
+      internalID: 6434253287127977165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8cdfd6bd7f10b20800000000000000
+      internalID: 3099030540422858946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8218b6c44b6e3090800000000000000
+      internalID: -8052881140555967858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4537bd06edc188a60800000000000000
+      internalID: 7676417306286322516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f29234eb16fc900800000000000000
+      internalID: 706891136318910287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3511a9a1fd9e084a0800000000000000
+      internalID: -6593012710037122733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2bb4e6d62dff5a0800000000000000
+      internalID: -6485233570946501902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4ddd15acadf9d40800000000000000
+      internalID: 5593429824709186778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a04d38b95c13d830800000000000000
+      internalID: 4094647657878601893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e621acdf2d27240800000000000000
+      internalID: 4788121341307022862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23464d136f62e8fe0800000000000000
+      internalID: -1184966813112048590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a6bad5a1f9ddf00800000000000000
+      internalID: 1143244816011455106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a05bb97cd32110800000000000000
+      internalID: 1235073138221426534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 64
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65747f76b03a880e0800000000000000
+      internalID: -2267383142996818090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f2b81ae821c4c20800000000000000
+      internalID: 3191946639703748498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466775b5d04264980800000000000000
+      internalID: -8555110802358045084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f9d7adb43d3a4f0800000000000000
+      internalID: -818578384509624462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0520ee53835d849d0800000000000000
+      internalID: -2789745531756346800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cf076fdff379810800000000000000
+      internalID: 1771955338387455111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8e1419ea18ac3c0800000000000000
+      internalID: -4338512704256743223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf527b46a9b486fa0800000000000000
+      internalID: -5807308593007483397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 32
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa91e55e2a881e50800000000000000
+      internalID: 6780321170620258989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef72ddd5c14e560800000000000000
+      internalID: 7342024481988673124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f374ae0fedffc30800000000000000
+      internalID: 4395476887640948541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c67552be2978c760800000000000000
+      internalID: 7478360422716110533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe5efd89167b1e00800000000000000
+      internalID: 1016535993030696702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b603696d91226ca80800000000000000
+      internalID: -8447026556717092757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216d8912c2bd99480800000000000000
+      internalID: -8891835006677625326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7eefc5e189cb670800000000000000
+      internalID: 8555880648273749933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_roboMJ_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e879ca3fd11c471e0800000000000000
+      internalID: -2200921983490943090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
