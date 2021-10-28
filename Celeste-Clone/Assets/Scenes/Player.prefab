@@ -5079,8 +5079,8 @@ MonoBehaviour:
   wallSide: 0
   collisionRadius: 0.1
   bottomOffset: {x: 0, y: -0.79}
-  rightOffset: {x: 0.5, y: -0.43}
-  leftOffset: {x: -0.5, y: -0.43}
+  rightOffset: {x: 0.5, y: -0.5}
+  leftOffset: {x: -0.5, y: -0.5}
   topRightOffset: {x: 0.5, y: 0.35}
   topLeftOffset: {x: -0.5, y: 0.35}
 --- !u!1 &6725853968758225080
