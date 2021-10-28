@@ -4561,6 +4561,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  canHold: 1
+  holdTimerMax: 5
+  isClimbing: 0
+  groundLinearDrag: 0
+  airLinearDrag: 0
   speed: 7
   jumpForce: 12
   slideSpeed: 1

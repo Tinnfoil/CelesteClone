@@ -11,6 +11,14 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rb;
     private AnimationScript anim;
 
+    // my variables
+    public bool canHold = true;
+    private double timer = 0.0;
+    public double holdTimerMax;
+    public bool isClimbing = false;
+    public float groundLinearDrag;
+    public float airLinearDrag;
+
     [Space]
     [Header("Stats")]
     public float speed = 10;
@@ -112,7 +120,7 @@ public class Movement : MonoBehaviour
             pushingWall = true;
         }
 
-        if (wallGrab && !isDashing)
+        if (wallGrab && !isDashing && canHold)
         {
             rb.gravityScale = 0;
             if (x > .2f || x < -.2f)
@@ -130,6 +138,13 @@ public class Movement : MonoBehaviour
                     rb.velocity = new Vector2(rb.velocity.x, 0);
                     anim.SetHorizontalMovement(x, 0, 0);
                 }
+
+                timer += Time.deltaTime;
+                if(timer > holdTimerMax)
+                {
+                    canHold = false;
+                    isClimbing = false;
+                }
             }
         }
         else
@@ -137,7 +152,7 @@ public class Movement : MonoBehaviour
             rb.gravityScale = 3;
         }
 
-        if (coll.onWall && !coll.onGround)
+        if (coll.onWall && !coll.onGround && canHold)
         {
             if (x != 0 && !wallGrab)
             {
@@ -147,6 +162,13 @@ public class Movement : MonoBehaviour
             {
                 speedModifier = 0;
             }
+        }
+        
+        //Wall slide when not holding
+        if ((coll.onLeftWall || coll.onRightWall) && !coll.onGround && !canHold)
+        {
+            wallSlide = true;
+            WallSlide();
         }
 
         if (!coll.onWall || coll.onGround)
@@ -228,6 +250,9 @@ public class Movement : MonoBehaviour
         hasDashed = false;
         isDashing = false;
 
+        canHold = true;
+        timer = 0;
+
         side = anim.sr.flipX ? -1 : 1;
 
         jumpParticle.Play();
@@ -275,7 +300,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator GroundDash()
     {
-        yield return new WaitForSeconds(.15f);
+        yield return new WaitForSeconds(.25f);
         if (coll.onGround)
             hasDashed = false;
     }
