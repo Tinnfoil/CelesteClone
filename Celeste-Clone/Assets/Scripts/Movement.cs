@@ -413,6 +413,16 @@ public class Movement : MonoBehaviour
         whiteTime = .1f;
     }
 
+    public void ChangeToClassic()
+    {
+        movementType = MovementType.Classic;
+    }
+
+    public void ChangeToPolish()
+    {
+        movementType = MovementType.Polished;
+    }
+
     public enum MovementType
     {
         Classic,
