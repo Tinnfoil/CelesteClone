@@ -58,6 +58,7 @@ public class Movement : MonoBehaviour
     public SpriteRenderer whiteSpriteRenderer;
     private float whiteTime;
     private Action OnDashStateChanged;
+    private float hangTime;
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +131,7 @@ public class Movement : MonoBehaviour
 
             rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier));
 
+            // Velocity sustain on wall impact
             if (movementType != MovementType.Classic)
             {
                 //Debug.Log(pushingWall + " " + coll.onTopOfWall + "" + y);
@@ -178,7 +180,7 @@ public class Movement : MonoBehaviour
         {
             anim.SetTrigger("jump");
 
-            if (coll.onGround)
+            if (coll.onGround || hangTime > 0)
                 Jump(Vector2.up, false);
             if (coll.onWall && !coll.onGround)
                 WallJump();
@@ -194,11 +196,19 @@ public class Movement : MonoBehaviour
         {
             GroundTouch();
             groundTouch = true;
+
+            // Shake Camera on land
+            if(movementType == MovementType.Distinct)
+            {
+                Camera.main.transform.DOComplete();
+                Camera.main.transform.DOShakePosition(.1f, .07f, 10, 90, false, true);
+            }
         }
 
         if (!coll.onGround && groundTouch)
         {
             groundTouch = false;
+            if (movementType != MovementType.Classic) { hangTime = .05f; }
         }
 
         WallParticle(y);
@@ -217,11 +227,16 @@ public class Movement : MonoBehaviour
             anim.Flip(side);
         }
 
+        // Linear fall time
         if (!isDashing && movementType == MovementType.Polished)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -10, 20));
         }
 
+        if(hangTime > 0)
+        {
+            hangTime -= Time.deltaTime;
+        }
 
     }
 
@@ -427,6 +442,11 @@ public class Movement : MonoBehaviour
     public void ChangeToPolish()
     {
         movementType = MovementType.Polished;
+    }
+
+    public void ChangeToDistinct()
+    {
+        movementType = MovementType.Distinct;
     }
 
     public enum MovementType
