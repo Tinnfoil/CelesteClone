@@ -217,6 +217,12 @@ public class Movement : MonoBehaviour
             anim.Flip(side);
         }
 
+        if (!isDashing && movementType == MovementType.Polished)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -10, 20));
+        }
+
+
     }
 
     private void LateUpdate()

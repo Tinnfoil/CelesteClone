@@ -10,6 +10,8 @@ public class AnimationScript : MonoBehaviour
     private Collision coll;
     [HideInInspector]
     public SpriteRenderer sr;
+    public AudioClip[] stepSounds;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -17,7 +19,14 @@ public class AnimationScript : MonoBehaviour
         coll = GetComponentInParent<Collision>();
         move = GetComponentInParent<Movement>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+        stepSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/step1"),
+                                                        (AudioClip)Resources.Load("Sounds/step2"),
+                                                        (AudioClip)Resources.Load("Sounds/step3"),
+                                                        (AudioClip)Resources.Load("Sounds/step4"),
+                                                        (AudioClip)Resources.Load("Sounds/step5")};
     }
+
 
     void Update()
     {
@@ -30,9 +39,10 @@ public class AnimationScript : MonoBehaviour
         anim.SetBool("isDashing", move.isDashing);
         anim.SetBool("canHold", move.canHold);
 
+
     }
 
-    public void SetHorizontalMovement(float x,float y, float yVel)
+    public void SetHorizontalMovement(float x, float y, float yVel)
     {
         anim.SetFloat("HorizontalAxis", x);
         anim.SetFloat("VerticalAxis", y);
@@ -60,5 +70,12 @@ public class AnimationScript : MonoBehaviour
 
         bool state = (side == 1) ? false : true;
         sr.flipX = state;
+    }
+
+    public void PlayFootstep()
+    {
+        audioSource.clip = stepSounds[Random.Range(0, stepSounds.Length)];
+        audioSource.volume = 0.05f;
+        audioSource.Play();
     }
 }
