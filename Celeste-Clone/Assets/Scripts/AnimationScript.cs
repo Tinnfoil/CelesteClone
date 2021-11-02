@@ -20,6 +20,7 @@ public class AnimationScript : MonoBehaviour
         move = GetComponentInParent<Movement>();
         sr = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+        //random step sounds to play
         stepSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/step1"),
                                                         (AudioClip)Resources.Load("Sounds/step2"),
                                                         (AudioClip)Resources.Load("Sounds/step3"),
