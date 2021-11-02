@@ -8410,6 +8410,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6725853968569481063, guid: 9fa93fb20285a6c4e8324e29d752a698,
+        type: 3}
+      propertyPath: holdTimerMax
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6725853968569481083, guid: 9fa93fb20285a6c4e8324e29d752a698,
         type: 3}
       propertyPath: m_Name

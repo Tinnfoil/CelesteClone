@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour
     public bool canHold = true;
     private double timer = 0.0;
     public double holdTimerMax;
-    public bool isClimbing = false;
     public float groundLinearDrag;
     public float airLinearDrag;
 
@@ -128,6 +127,7 @@ public class Movement : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, 0);
 
             float speedModifier = y > 0 ? .5f : 1;
+            bool isClimbing = y > 0 ? true : false;
 
             rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier));
 
@@ -141,7 +141,16 @@ public class Movement : MonoBehaviour
                     anim.SetHorizontalMovement(x, 0, 0);
                 }
 
-                timer += Time.deltaTime;
+                Debug.Log(timer);
+                if (isClimbing)
+                {
+                    timer += Time.deltaTime*5;
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                }
+                
                 if(timer > holdTimerMax)
                 {
                     canHold = false;
