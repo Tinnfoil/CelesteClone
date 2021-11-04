@@ -75,8 +75,13 @@ public class AnimationScript : MonoBehaviour
 
     public void PlayFootstep()
     {
-        audioSource.clip = stepSounds[Random.Range(0, stepSounds.Length)];
-        audioSource.volume = 0.15f;
-        audioSource.Play();
+        Movement movement = GetComponentInParent<Movement>();
+        if(movement.movementType != Movement.MovementType.Classic)
+        {
+            movement.walkParticle.Play();
+            audioSource.clip = stepSounds[Random.Range(0, stepSounds.Length)];
+            audioSource.volume = 0.15f;
+            audioSource.Play();
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using Random=UnityEngine.Random;
+using Random = UnityEngine.Random;
 
 public class Movement : MonoBehaviour
 {
@@ -48,6 +48,7 @@ public class Movement : MonoBehaviour
     public ParticleSystem dashParticle;
     public ParticleSystem jumpParticle;
     public ParticleSystem wallJumpParticle;
+    public ParticleSystem walkParticle;
     public ParticleSystem slideParticle;
 
 
@@ -89,19 +90,19 @@ public class Movement : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         jumpSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/up1"),
-                                                        (AudioClip)Resources.Load("Sounds/up2"), 
-                                                        (AudioClip)Resources.Load("Sounds/up3"), 
+                                                        (AudioClip)Resources.Load("Sounds/up2"),
+                                                        (AudioClip)Resources.Load("Sounds/up3"),
                                                         (AudioClip)Resources.Load("Sounds/up4"),
                                                         (AudioClip)Resources.Load("Sounds/up5"),
                                                         (AudioClip)Resources.Load("Sounds/up6"),
                                                         (AudioClip)Resources.Load("Sounds/up7")};
         landSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/down1"),
-                                                        (AudioClip)Resources.Load("Sounds/down2"), 
-                                                        (AudioClip)Resources.Load("Sounds/down3"), 
+                                                        (AudioClip)Resources.Load("Sounds/down2"),
+                                                        (AudioClip)Resources.Load("Sounds/down3"),
                                                         (AudioClip)Resources.Load("Sounds/down4"),
                                                         (AudioClip)Resources.Load("Sounds/down5"),
-                                                        (AudioClip)Resources.Load("Sounds/down6")};     
-        dashSound =  (AudioClip)Resources.Load("Sounds/dash");
+                                                        (AudioClip)Resources.Load("Sounds/down6")};
+        dashSound = (AudioClip)Resources.Load("Sounds/dash");
         //Time.timeScale = .25f;
     }
 
@@ -213,17 +214,28 @@ public class Movement : MonoBehaviour
             anim.SetTrigger("jump");
 
             if (coll.onGround || hangTime > 0)
+            {
                 Jump(Vector2.up, false);
-                audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
-                audioSource.volume = 0.4f;
-                audioSource.Play();
-                // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
+                if (movementType != MovementType.Classic)
+                {
+                    audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                    audioSource.volume = 0.4f;
+                    audioSource.Play();
+                }
+            }
+            // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
             if (coll.onWall && !coll.onGround)
+            {
                 WallJump();
-                audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
-                audioSource.volume = 0.4f;
-                audioSource.Play();
-                // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
+                if (movementType != MovementType.Classic)
+                {
+                    audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                    audioSource.volume = 0.4f;
+                    audioSource.Play();
+                }
+            }
+
+            // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
         }
 
         if (Input.GetButtonDown("Fire1") && !hasDashed)
@@ -429,7 +441,7 @@ public class Movement : MonoBehaviour
 
         particle.Play();
 
-        
+
     }
 
     IEnumerator DisableMovement(float time)
