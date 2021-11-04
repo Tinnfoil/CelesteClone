@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Random=UnityEngine.Random;
 
 public class Movement : MonoBehaviour
 {
@@ -61,6 +62,11 @@ public class Movement : MonoBehaviour
     public float GravityScale = 1;
     public float JumpScale = 1;
 
+    public AudioClip[] jumpSounds;
+    public AudioClip[] landSounds;
+    public AudioClip dashSound;
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +87,21 @@ public class Movement : MonoBehaviour
         }
         OnDashStateChanged += TurnWhite;
 
+        audioSource = GetComponent<AudioSource>();
+        jumpSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/up1"),
+                                                        (AudioClip)Resources.Load("Sounds/up2"), 
+                                                        (AudioClip)Resources.Load("Sounds/up3"), 
+                                                        (AudioClip)Resources.Load("Sounds/up4"),
+                                                        (AudioClip)Resources.Load("Sounds/up5"),
+                                                        (AudioClip)Resources.Load("Sounds/up6"),
+                                                        (AudioClip)Resources.Load("Sounds/up7")};
+        landSounds = new AudioClip[]{(AudioClip)Resources.Load("Sounds/down1"),
+                                                        (AudioClip)Resources.Load("Sounds/down2"), 
+                                                        (AudioClip)Resources.Load("Sounds/down3"), 
+                                                        (AudioClip)Resources.Load("Sounds/down4"),
+                                                        (AudioClip)Resources.Load("Sounds/down5"),
+                                                        (AudioClip)Resources.Load("Sounds/down6")};     
+        dashSound =  (AudioClip)Resources.Load("Sounds/dash");
         //Time.timeScale = .25f;
     }
 
@@ -193,8 +214,16 @@ public class Movement : MonoBehaviour
 
             if (coll.onGround || hangTime > 0)
                 Jump(Vector2.up, false);
+                audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                audioSource.volume = 0.4f;
+                audioSource.Play();
+                // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
             if (coll.onWall && !coll.onGround)
                 WallJump();
+                audioSource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                audioSource.volume = 0.4f;
+                audioSource.Play();
+                // if(Gamepad.current != null) StartCoroutine(VibrateController(.08f, .075f));
         }
 
         if (Input.GetButtonDown("Fire1") && !hasDashed)
@@ -399,6 +428,8 @@ public class Movement : MonoBehaviour
         rb.velocity += dir * jumpForce * (movementType == MovementType.Distinct ? JumpScale : 1);
 
         particle.Play();
+
+        
     }
 
     IEnumerator DisableMovement(float time)
