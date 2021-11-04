@@ -150,10 +150,10 @@ public class Movement : MonoBehaviour
             if (x > .2f || x < -.2f)
                 rb.velocity = new Vector2(rb.velocity.x, 0);
 
-            float speedModifier = y > 0 ? .5f : 1;
+            float speedModifier = y > 0 ? .5f : .25f;
             bool isClimbing = y > 0 ? true : false;
 
-            rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier));
+            rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier * (movementType == MovementType.Distinct ? .5f : 1)));
 
             // Velocity sustain on wall impact
             if (movementType != MovementType.Classic)
@@ -175,7 +175,7 @@ public class Movement : MonoBehaviour
                     timer += Time.deltaTime;
                 }
 
-                if (timer > holdTimerMax)
+                if (timer > holdTimerMax + (movementType == MovementType.Distinct ? 10 : 0))
                 {
                     canHold = false;
                     isClimbing = false;
@@ -423,7 +423,18 @@ public class Movement : MonoBehaviour
 
         if (!wallJumped)
         {
-            rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
+            if (movementType == MovementType.Distinct)
+            {
+                rb.velocity = Vector2.Lerp(rb.velocity, new Vector2(dir.x * speed * 1.25f, rb.velocity.y), (!coll.onGround ? 40 : 10) * Time.deltaTime);
+            }
+            else if (movementType == MovementType.Polished)
+            {
+                rb.velocity = Vector2.Lerp(rb.velocity, new Vector2(dir.x * speed, rb.velocity.y), 40 * Time.deltaTime);
+            }
+            else
+            {
+                rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
+            }
         }
         else
         {
