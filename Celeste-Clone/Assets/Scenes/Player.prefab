@@ -4928,6 +4928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
+  stepSounds: []
+  audioSource: {fileID: 0}
 --- !u!1 &6725853968569481083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,7 +5022,6 @@ MonoBehaviour:
   rb: {fileID: 0}
   canHold: 1
   holdTimerMax: 5
-  isClimbing: 0
   groundLinearDrag: 0
   airLinearDrag: 0
   speed: 7
@@ -5042,6 +5043,8 @@ MonoBehaviour:
   movementType: 1
   spriteRenderer: {fileID: 6725853968560757603}
   whiteSpriteRenderer: {fileID: 6725853968758225062}
+  GravityScale: 2.5
+  JumpScale: 1.5
 --- !u!114 &6725853968569481060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5078,7 +5081,7 @@ MonoBehaviour:
   onTopOfWall: 0
   wallSide: 0
   collisionRadius: 0.1
-  bottomOffset: {x: 0, y: -0.79}
+  bottomOffset: {x: 0, y: -0.8}
   rightOffset: {x: 0.5, y: -0.5}
   leftOffset: {x: -0.5, y: -0.5}
   topRightOffset: {x: 0.5, y: 0.35}
@@ -5152,7 +5155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2017411151166141179, guid: d6fc0a7f7b5598e4d80285064e644f0d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}

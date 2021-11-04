@@ -4404,6 +4404,8 @@ MonoBehaviour:
   ghostsParent: {fileID: 234361389}
   trailColor: {r: 1, g: 0.36320752, b: 0.60256857, a: 1}
   fadeColor: {r: 1, g: 0.36320752, b: 0.60256857, a: 0}
+  polishedTrailColor: {r: 0.18560876, g: 0.35157645, b: 0.9150943, a: 1}
+  polishedFadeColor: {r: 0.19424175, g: 0.36059228, b: 0.9150943, a: 0}
   ghostInterval: 0.05
   fadeTime: 0.5
 --- !u!1 &443073844

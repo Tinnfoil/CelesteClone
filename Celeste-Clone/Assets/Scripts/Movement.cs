@@ -58,6 +58,8 @@ public class Movement : MonoBehaviour
     private float whiteTime;
     private Action OnDashStateChanged;
     private float hangTime;
+    public float GravityScale = 1;
+    public float JumpScale = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -141,17 +143,17 @@ public class Movement : MonoBehaviour
                     anim.SetHorizontalMovement(x, 0, 0);
                 }
 
-                Debug.Log(timer);
+                //Debug.Log(timer);
                 if (isClimbing)
                 {
-                    timer += Time.deltaTime*5;
+                    timer += Time.deltaTime * 5;
                 }
                 else
                 {
                     timer += Time.deltaTime;
                 }
-                
-                if(timer > holdTimerMax)
+
+                if (timer > holdTimerMax)
                 {
                     canHold = false;
                     isClimbing = false;
@@ -160,7 +162,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 3;
+            rb.gravityScale = 3 * (movementType == MovementType.Distinct ? GravityScale : 1);
         }
 
         if (coll.onWall && !coll.onGround && canHold)
@@ -174,7 +176,7 @@ public class Movement : MonoBehaviour
                 speedModifier = 0;
             }
         }
-        
+
         //Wall slide when not holding
         if ((coll.onLeftWall || coll.onRightWall) && !coll.onGround && !canHold)
         {
@@ -203,15 +205,9 @@ public class Movement : MonoBehaviour
 
         if (coll.onGround && !groundTouch)
         {
+
             GroundTouch();
             groundTouch = true;
-
-            // Shake Camera on land
-            if(movementType == MovementType.Distinct)
-            {
-                Camera.main.transform.DOComplete();
-                Camera.main.transform.DOShakePosition(.1f, .07f, 10, 90, false, true);
-            }
         }
 
         if (!coll.onGround && groundTouch)
@@ -242,7 +238,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -10, 20));
         }
 
-        if(hangTime > 0)
+        if (hangTime > 0)
         {
             hangTime -= Time.deltaTime;
         }
@@ -322,7 +318,7 @@ public class Movement : MonoBehaviour
         yield return new WaitForSeconds(.3f);
 
         dashParticle.Stop();
-        rb.gravityScale = 3;
+        rb.gravityScale = 3 * (movementType == MovementType.Distinct ? GravityScale : 1);
         GetComponent<BetterJumping>().enabled = true;
         wallJumped = false;
         isDashing = false;
@@ -400,7 +396,7 @@ public class Movement : MonoBehaviour
         ParticleSystem particle = wall ? wallJumpParticle : jumpParticle;
 
         rb.velocity = new Vector2(rb.velocity.x, 0);
-        rb.velocity += dir * jumpForce;
+        rb.velocity += dir * jumpForce * (movementType == MovementType.Distinct ? JumpScale : 1);
 
         particle.Play();
     }
