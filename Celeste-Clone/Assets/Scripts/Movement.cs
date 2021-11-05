@@ -154,7 +154,7 @@ public class Movement : MonoBehaviour
             float speedModifier = y > 0 ? .5f : .25f;
             bool isClimbing = y > 0 ? true : false;
 
-            rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier * (movementType == MovementType.Distinct ? .5f : 1)));
+            rb.velocity = new Vector2(rb.velocity.x, y * (speed * speedModifier * (movementType == MovementType.Distinct ? .8f : 1.2f)));
 
             // Velocity sustain on wall impact
             if (movementType != MovementType.Classic)
