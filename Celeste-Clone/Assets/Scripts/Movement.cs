@@ -104,6 +104,7 @@ public class Movement : MonoBehaviour
                                                         (AudioClip)Resources.Load("Sounds/down6")};
         dashSound = (AudioClip)Resources.Load("Sounds/dash");
         //Time.timeScale = .25f;
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
@@ -420,7 +421,7 @@ public class Movement : MonoBehaviour
 
         speedModifier = Mathf.Clamp(speedModifier, -20, 20);
         rb.velocity = new Vector2(push, -slideSpeed + speedModifier);
-        speedModifier *= .99f;
+        speedModifier *= .94f;
     }
 
     private void Walk(Vector2 dir)
