@@ -339,6 +339,10 @@ public class Movement : MonoBehaviour
         Vector2 dir = new Vector2(x, y);
 
         rb.velocity += dir.normalized * dashSpeed;
+        if(movementType != MovementType.Classic)
+        {
+            speedModifier = rb.velocity.y / 2;
+        }
         StartCoroutine(DashWait());
 
         OnDashStateChanged?.Invoke(); // Invoke the event
@@ -409,6 +413,7 @@ public class Movement : MonoBehaviour
             }
         }
 
+        speedModifier = Mathf.Clamp(speedModifier, -10, 10);
         rb.velocity = new Vector2(push, -slideSpeed + speedModifier);
         speedModifier *= .99f;
     }
