@@ -341,7 +341,11 @@ public class Movement : MonoBehaviour
         rb.velocity += dir.normalized * dashSpeed;
         if(movementType != MovementType.Classic)
         {
-            speedModifier = rb.velocity.y / 2;
+            speedModifier = rb.velocity.y;
+            if (movementType == MovementType.Distinct)
+            {
+                speedModifier = rb.velocity.y/2;
+            }
         }
         StartCoroutine(DashWait());
 
@@ -410,10 +414,11 @@ public class Movement : MonoBehaviour
             if (movementType != MovementType.Classic)
             {
                 speedModifier = rb.velocity.y;
+                if (isDashing && movementType == MovementType.Polished) { speedModifier *= 2; }
             }
         }
 
-        speedModifier = Mathf.Clamp(speedModifier, -10, 10);
+        speedModifier = Mathf.Clamp(speedModifier, -20, 20);
         rb.velocity = new Vector2(push, -slideSpeed + speedModifier);
         speedModifier *= .99f;
     }
